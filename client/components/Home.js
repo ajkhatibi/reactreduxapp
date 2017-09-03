@@ -6,9 +6,8 @@ class Home extends Component {
     return(
     <div className="container">
       <Navs/>
-      <div>Hey There sexy</div>
+      {this.props.children}
     </div>
-
     )
   }
 }

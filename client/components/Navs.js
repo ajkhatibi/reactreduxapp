@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Nav, NavItem} from 'react-bootstrap';
+import {Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
 class Navs extends Component {
   render(){
@@ -8,7 +8,11 @@ class Navs extends Component {
           <NavItem>Home</NavItem>
           <NavItem>About</NavItem>
           <NavItem>Contact</NavItem>
-          <NavItem>Messaging</NavItem>
+          <NavItem>Chat Room</NavItem>
+          <NavDropdown title='Sign In/Sign Out'>
+            <MenuItem>Sign Out</MenuItem>
+            <MenuItem>Sign In</MenuItem>
+          </NavDropdown>
         </Nav>
     )
   }
