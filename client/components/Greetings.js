@@ -8,6 +8,7 @@ class Greetings extends Component {
       <Jumbotron>
         <h1>Welcome To Akbar's React App</h1>
         <p><Button bsStyle="primary">Learn more</Button></p>
+        {this.props.children}
       </Jumbotron>
     )
   }
